@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CSharpDotNetCoreHW6</title>
+
+  
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark box-shadow mb-3">
+            <div class="container">
+                <h3 style="color:lightgray">Birthday Card Generator</h3>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - C# .Net Core - Assignment 6
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
